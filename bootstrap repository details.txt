@@ -1,0 +1,10 @@
+Bootstrap repository
+
+https://github.com/TAM009/Responsive-Website-using-BootStrap.git
+
+echo "# Responsive-Website-using-BootStrap" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/TAM009/Responsive-Website-using-BootStrap.git
+git push -u origin master
