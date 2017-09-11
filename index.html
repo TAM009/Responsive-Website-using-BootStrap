@@ -18,7 +18,7 @@
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 		
 		<!-- Custom CSS -->
-		<link href="includes/css/stylemini.css" rel="stylesheet">
+		<link href="includes/css/style2.css" rel="stylesheet">
 
 		<!--custom google fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -98,6 +98,10 @@
                             	<a href="#">Impacts</a>    
 							</li>
 
+							<form class="navbar-form pull-left">
+								<input type="text" class="form-control" placeholder="Search this site" id="searchInput" /><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						    </form><!--end navbar-form--> 
+
 						</ul>
 
 						
@@ -131,9 +135,7 @@
 							</li>
 						</ul><!--end of navbar-nav pull right-->
 
-                        <form class="navbar-form pull-left">
-							<input type="text" class="form-control" placeholder="Search this site" id="searchInput" /><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-						</form><!--end navbar-form-->  
+                         
                         	
 					</div><!--end of nav collapse-->
 				</div><!--end container-->
@@ -227,7 +229,7 @@
 			
 			<div class="row" id="featuresHeading">
 
-				<div class="col_12">
+				<div class=" well col_12 ">
 
 					<h2>Salient Keypoints</h2>
 					
@@ -324,29 +326,29 @@
 							<div class="tab-pane active" id="tab1">
 								<h4><span class="glyphicon glyphicon-map-marker" ></span>Our Location <small>Noah Ancillary</small></h4>
 
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480844.28894099186!2d85.09846881002301!3d19.687233723256007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a181f493428369b%3A0x8c7562c60bcda7a1!2sChilika+Lake!5e0!3m2!1sen!2sin!4v1504607070117" width="570" height="200"  style="border:0" allowfullscreen></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480844.28894099186!2d85.09846881002301!3d19.687233723256007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a181f493428369b%3A0x8c7562c60bcda7a1!2sChilika+Lake!5e0!3m2!1sen!2sin!4v1504607070117" width="100%" height="200"  style="border:0" allowfullscreen></iframe>
+								<div class="well">
+									<p>
+									Puri covers an area of 630 square kilometres (243 sq mi),with a maximum north-south distance of 21 kilometres (13 mi) and a maximum east-west distance of 43 km (27 mi). The city's borders are formed by Lake Ontario to the south, Etobicoke Creek and Highway 427 to the west, Steeles Avenue to the north and the Rouge River and the Scarborough-Pickering Townline to the east.
+									</p>
 
-								<p>
-								Puri covers an area of 630 square kilometres (243 sq mi),[78] with a maximum north-south distance of 21 kilometres (13 mi) and a maximum east-west distance of 43 km (27 mi). It has a 46-kilometre (29 mi) long waterfront shoreline, on the northwestern shore of Lake Ontario. The Toronto Islands and Port Lands extend out into the lake, allowing for a somewhat sheltered Toronto Harbour south of the downtown core.[79] The city's borders are formed by Lake Ontario to the south, Etobicoke Creek and Highway 427 to the west, Steeles Avenue to the north and the Rouge River and the Scarborough-Pickering Townline to the east.
-								</p>
-
-								<p>
-								In order to register with us, please proceed to the section 2 and clcik on the "Register" button.
-								</p>
-
+									<p>
+									In order to register with us, please proceed to the section 2 and clcik on the "Register" button.
+									</p>
+								</div>
 									
 							</div><!--end tab-pane-->
 
 							<div class="tab-pane" id="tab2">
+
 								<h4>UNLOCKING VALUES <small>Securing Future</small></h4>
 
 								<img src="http://via.placeholder.com/140" alt="empty thumbnail" class="thumbnail pull-left">
-
-								<p>
-									At Blackstone, we apply our capabilities as a leading global investment firm to deliver solutions, unlock value and propel growth. The capital we deploy on behalf of our investors fuels the development of businesses and communities. The investments we make are the wellsprings of future opportunity. Through this work, we seek to ensure a secure retirement for millions.
-
-									We have built the firm on a strong foundation of intellectual and financial capital. We focus on attracting exceptionally talented people and on creating an atmosphere that rewards initiative, independent thinking, and integrity. Our solid financial base, including strong capital, ensures our capacity to deliver on our commitments.
-								</p>
+								<div class="well">
+									<p>
+										At Blackstone, we apply our capabilities as a leading global investment firm to deliver solutions, unlock value and propel growth. The capital we deploy on behalf of our investors fuels the development of businesses and communities. The investments we make are the wellsprings of future opportunity. Through this work, we seek to ensure a secure retirement for millions.
+									</p>
+								</div>
 
 								<hr>
 								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Register.</a>
@@ -370,30 +372,37 @@
 
 												<p><small class="text-muted">This form doesnt do anything.</small></p>
 
-												<form class="form-horizontal">
+												<form class="form-horizontal" method="get" name="ContactForm" onsubmit="return ValidateContactForm()">
 													<div class="form-group">
 														<label class="col-lg-2 control-label" for="inputName">Name</label>
 														<div class="col-lg-10">
-															<input class="form-control" id="inputName">
+															<input class="form-control" id="inputName" type="text" name="Name" placeholder="name">
 														</div>
 													</div><!--end of Horizontal form-->
 
 													<div class="form-group">
 														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
 														<div class="col-lg-10">
-															<input class="form-control" id="inputEmail">
+															<input class="form-control" id="inputEmail" type="text" placeholder="name@domain.com" name="Email">
+														</div>
+													</div><!--end of Horizontal form-->
+
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputNumber">Number</label>
+														<div class="col-lg-10">
+															<input class="form-control" type="Number" id="inputNumber" name="Telephone">
 														</div>
 													</div><!--end of Horizontal form-->
 
 													<div class="form-group">
 														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
 														<div class="col-lg-10">
-															<textarea class="form-control" id="inputMessage" placeholder="Your comments.." rows="4"></textarea>
-															<button class="btn btn-success pull-right" type="submit">Send</button>
+															<textarea class="form-control" id="inputMessage" placeholder="Your comments.." rows="4" name="Comment"></textarea>
+															<button class="btn btn-success pull-right" type="submit" value="submit">Send</button>
 														</div>
 													</div><!--end of Horizontal form-->
 
-												</form>
+												</form><!--end of ValidateContactForm-->
 
 												
 												
@@ -421,12 +430,13 @@
 				</div><!--end col-sm-6-->
 
 				<div class="col-sm-6" id="serve">
+					<div class="well">
 					<h3>Who We Serve</h3>
 					<p>
 					As a leader in alternative asset management, we are a trusted partner to many of the world’s top institutional and individual investors, including retirement systems which represent 29 million pensioners in the United States and millions more internationally. As careful stewards of capital, we strive to provide solutions that create lasting value for our investors, the companies in which we invest and society at large. 
-
-					By making companies stronger and better positioned for long-term growth, we can help create good jobs, support local communities and, ultimately, secure the future of millions of people around the world.
 					</p>
+					</div>
+
 
 					<h4>Our Core Values</h4>
 					<div class="list-group">
@@ -445,10 +455,13 @@
 							<p class="list-group-item-text"> This principle defines our culture and character and has been at its core since its inception.</p>
 						</a>
 					</div><!--end of list-group-->
+
+					<div class="well">
 					<h4>Diverse and Global</h4>
 					<p>
-					The solutions we provide reflect insights generated by our diverse, global business platform, which encompasses private equity and real estate funds, hedge fund solutions, and credit funds. We have built the firm on a strong foundation of intellectual and financial capital. We focus on attracting exceptionally talented people and on creating an atmosphere that rewards initiative, independent thinking, and integrity. Our solid financial base, including strong capital, ensures our capacity to deliver on our commitments.
+					The solutions we provide reflect insights generated by our diverse, global business platform, which encompasses private equity and real estate funds, hedge fund solutions, and credit funds. We focus on attracting exceptionally talented people and on creating an atmosphere that rewards initiative, independent thinking, and integrity. Our solid financial base, including strong capital, ensures our capacity to deliver on our commitments.
 					</p>
+					</div>
 				</div><!--end of col-sm-6-->
 				
 			</div><!--end moreInfo-->
@@ -551,5 +564,9 @@
 			
 			<!-- Custom JS -->
 			<script src="includes/js/script.js"></script>
+
+			<!--Client Validation JS-->
+			<script src="includes/js/form.js"></script>
+
 	</body>
 	</html>
